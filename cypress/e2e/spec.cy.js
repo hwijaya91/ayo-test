@@ -17,7 +17,8 @@ describe('Studi Kasus 1', () => {
   });
 
   // Pengecekan double booking pada venue & date & start_time & end_time yang sama
-  it('Cek double booking', () => {
+  it.only('Cek double booking', () => {
+    let dataDobel = false;
     for (let i = 0; i < bookings.length; i++) {
       for (let j = i + 1; j < bookings.length; j++) {
         if (
@@ -27,10 +28,12 @@ describe('Studi Kasus 1', () => {
           bookings[i].end_time === bookings[j].end_time
         ) {
         message = `Data dobel antara ${bookings[i].booking_id} dengan ${bookings[j].booking_id} `
+        dataDobel = true;
         }//tutup if
       }//tutup for j
     }//tutup for i
     cy.log(message) //print booking id yang dobel
+    expect(dataDobel,message).to.be.false;
   });
 
   // Memastikan harga sudah sesuai

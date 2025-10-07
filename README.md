@@ -4,11 +4,14 @@
 ## Cara Penggunaan
 
 1. <code>git clone https://github.com/hwijaya91/ayo-test.git</code>
-2. <code>npm install</code>
-3. <code>npx cypress open</code>
-4. Pilih E2E Testing dan pilih browser
-5. Pada browser yang baru terbuka pilih <b>spec.cy.js</b>
+2. <code>cd ayo-test</code>
+3. <code>npm install</code>
+4. <code>npx cypress run</code>
 
+## Notes 
+
+- Data tabel pada soal dibuat dalam file json di cypress/fixtures
+- Script automation ada di file cypress/e2e/spec.cy.js
 
 
 ## Test Scenario
