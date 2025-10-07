@@ -1,4 +1,49 @@
 
+# 🧠 Studi Kasus 1 – QA Analysis AYO.co.id
+
+<table border="1" cellspacing="0" cellpadding="6" style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 14px;">
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Scenario Name</th>
+      <th>Test Case Description</th>
+      <th>Precondition</th>
+      <th>Test Steps</th>
+      <th>Expected Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Cek double booking</td>
+      <td>Memeriksa apakah ada booking dengan (<code>venue_id</code>, <code>date</code>, <code>start_time</code>, dan <code>end_time</code>) yang sama</td>
+      <td>File <code>bookings.json</code> berisi minimal dua data booking.</td>
+      <td>
+        1. Ambil data dari <code>fixtures/booking.json</code>.<br>
+        2. Loop setiap kombinasi booking<br>
+        3. Bandingkan venue, tanggal, dan jam mulai hingga selesai<br>
+        4. Print <code>booking_id</code> jika ada data yang double
+      </td>
+      <td>Tidak ditemukan double booking dengan (<code>venue_id</code>, <code>date</code>, <code>start_time</code>, dan <code>end_time</code>) yang sama</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Cek harga booking</td>
+      <td>Memeriksa apakah harga booking sesuai dengan harga yang berlaku semestinya</td>
+      <td>File <code>fixtures/priceSched.json</code> berisi data tarif yang valid</td>
+      <td>
+        1. Load data booking dan priceSched (data untuk harga semestinya)<br>
+        2. Untuk tiap booking, cocokkan harga booking dengan harga semestinya<br>
+        3. Print <code>booking_id</code> jika ada harga yang tidak sesuai
+      </td>
+      <td>Harga booking sesuai dengan harga pada data <code>priceSched.json</code></td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+
 # 🧠 Studi Kasus 2 – QA Analysis AYO.co.id
 
 ## 1️⃣ Website (https://ayo.co.id)
