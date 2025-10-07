@@ -73,52 +73,38 @@
   <tbody>
     <tr>
       <td>1</td>
-      <td><b>Navigasi Menu Utama</b></td>
-      <td>Memastikan semua link dan navigasi berfungsi dengan benar.</td>
-      <td>Functional Testing, Link Validation Test</td>
-      <td>Klik setiap menu dan pastikan diarahkan ke halaman yang sesuai tanpa error 404.</td>
+      <td><b>Autentikasi User (Masuk/Daftar)</b></td>
+      <td>Validasi form login & register sesuai standar </td>
+      <td>Functional Testing, Negative Testing, Security Testing</td>
+      <td>Coba login dengan email salah, password kosong, format salah, SQL Injection, dan lain-lain</td>
     </tr>
     <tr>
       <td>2</td>
-      <td><b>Form Pencarian Lapangan</b></td>
-      <td>Memastikan fitur pencarian memberikan hasil yang relevan.</td>
-      <td>Functional Testing, UI/UX Testing</td>
-      <td>Pilih jenis olahraga & lokasi → klik "Temukan" → pastikan hasil sesuai filter.</td>
+      <td><b>Navigasi Menu Utama</b></td>
+      <td>Memastikan navigasi untuk Sewa Lapangan, Main Bareng, Sparring, Partner With Us, Liga AYO, Blog, dan juga link lain sudah sesuai.</td>
+      <td>Functional Testing</td>
+      <td>Klik setiap menu / link yang tersedia di halaman utama dan pastikan diarahkan ke halaman yang sesuai tanpa error</td>
     </tr>
     <tr>
       <td>3</td>
-      <td><b>Autentikasi User (Masuk/Daftar)</b></td>
-      <td>Validasi form login & register sesuai standar keamanan.</td>
-      <td>Functional Testing, Negative Testing, Security Testing</td>
-      <td>Coba login dengan email salah, password kosong, format salah, dsb.</td>
+      <td><b>Fitur Search dan Filter Sewa Lapangan, Main Bareng, dan Sparring</b></td>
+      <td>Memastikan fitur pencarian memberikan hasil yang relevan</td>
+      <td>Functional Testing, UI/UX Testing, Usability Testing</td>
+      <td>Pilih nama lapangan, kota, dan cabang olahraga yang diinginkan dan juga filter biaya lalu cari venue dan pastikan hasil sesuai</td>
     </tr>
     <tr>
       <td>4</td>
-      <td><b>Integrasi ke Mobile App</b></td>
-      <td>Pastikan tombol download menuju store yang benar.</td>
-      <td>Integration Testing, Link Test</td>
-      <td>Klik tombol dan pastikan diarahkan ke aplikasi AYO resmi di store.</td>
-    </tr>
-    <tr>
-      <td>5</td>
       <td><b>Responsivitas Website</b></td>
       <td>Pastikan tampilan UI proporsional di berbagai device.</td>
       <td>Responsive UI Testing</td>
       <td>Uji di resolusi mobile, tablet, dan desktop.</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>5</td>
       <td><b>Kecepatan dan Performa</b></td>
       <td>Evaluasi waktu load halaman.</td>
       <td>Performance Testing</td>
       <td>Gunakan Lighthouse/GTmetrix untuk mengukur load time.</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td><b>Keamanan Data Pengguna</b></td>
-      <td>Pastikan data user & booking aman.</td>
-      <td>Security Testing, Penetration Test (basic)</td>
-      <td>Coba input injection di form login & pencarian.</td>
     </tr>
   </tbody>
 </table>
