@@ -53,56 +53,137 @@
 
 
 
-# 🧠 Studi Kasus 2 – QA Analysis AYO.co.id
+# Studi Kasus 2 - Desktop dan MobileApp
 
-## 1️⃣ Website (https://ayo.co.id)
+## 1️⃣ Desktop (Google Chrome)
 
-| No | Area Fitur | Tujuan Pengujian | Jenis Pengujian yang Cocok | Contoh Skenario Uji |
-|----|-------------|------------------|-----------------------------|----------------------|
-| 1 | **Navigasi Menu Utama** | Memastikan semua link dan navigasi berfungsi dengan benar | Functional Testing, Link Validation Test | Klik setiap menu dan pastikan diarahkan ke halaman yang sesuai tanpa error 404. |
-| 2 | **Form Pencarian Lapangan** | Memastikan fitur pencarian memberikan hasil yang relevan | Functional Testing, UI/UX Testing | Pilih jenis olahraga & lokasi → klik "Temukan" → pastikan hasil sesuai filter. |
-| 3 | **Autentikasi User (Masuk/Daftar)** | Validasi form login & register sesuai standar keamanan | Functional Testing, Negative Testing, Security Testing | Coba login dengan email salah, password kosong, format salah, dsb. |
-| 4 | **Integrasi ke Mobile App** | Pastikan tombol download menuju store yang benar | Integration Testing, Link Test | Klik tombol dan pastikan diarahkan ke aplikasi AYO resmi di store. |
-| 5 | **Responsivitas Website** | Pastikan tampilan UI proporsional di berbagai device | Responsive UI Testing | Uji di resolusi mobile, tablet, dan desktop. |
-| 6 | **Kecepatan dan Performa** | Evaluasi waktu load halaman | Performance Testing | Gunakan Lighthouse/GTmetrix untuk mengukur load time. |
-| 7 | **Keamanan Data Pengguna** | Pastikan data user & booking aman | Security Testing, Penetration Test (basic) | Coba input injection di form login & pencarian. |
+<table border="1" cellspacing="0" cellpadding="6" style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 14px;">
+  <thead style="background-color: #f2f2f2;">
+    <tr>
+      <th>No</th>
+      <th>Area Fitur</th>
+      <th>Tujuan Pengujian</th>
+      <th>Jenis Pengujian yang Cocok</th>
+      <th>Contoh Skenario Uji</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><b>Navigasi Menu Utama</b></td>
+      <td>Memastikan semua link dan navigasi berfungsi dengan benar.</td>
+      <td>Functional Testing, Link Validation Test</td>
+      <td>Klik setiap menu dan pastikan diarahkan ke halaman yang sesuai tanpa error 404.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><b>Form Pencarian Lapangan</b></td>
+      <td>Memastikan fitur pencarian memberikan hasil yang relevan.</td>
+      <td>Functional Testing, UI/UX Testing</td>
+      <td>Pilih jenis olahraga & lokasi → klik "Temukan" → pastikan hasil sesuai filter.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><b>Autentikasi User (Masuk/Daftar)</b></td>
+      <td>Validasi form login & register sesuai standar keamanan.</td>
+      <td>Functional Testing, Negative Testing, Security Testing</td>
+      <td>Coba login dengan email salah, password kosong, format salah, dsb.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><b>Integrasi ke Mobile App</b></td>
+      <td>Pastikan tombol download menuju store yang benar.</td>
+      <td>Integration Testing, Link Test</td>
+      <td>Klik tombol dan pastikan diarahkan ke aplikasi AYO resmi di store.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><b>Responsivitas Website</b></td>
+      <td>Pastikan tampilan UI proporsional di berbagai device.</td>
+      <td>Responsive UI Testing</td>
+      <td>Uji di resolusi mobile, tablet, dan desktop.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><b>Kecepatan dan Performa</b></td>
+      <td>Evaluasi waktu load halaman.</td>
+      <td>Performance Testing</td>
+      <td>Gunakan Lighthouse/GTmetrix untuk mengukur load time.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><b>Keamanan Data Pengguna</b></td>
+      <td>Pastikan data user & booking aman.</td>
+      <td>Security Testing, Penetration Test (basic)</td>
+      <td>Coba input injection di form login & pencarian.</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
-## 2️⃣ Aplikasi Mobile (AYO App)
+## 2️⃣ Mobile App (Android)
 
-| No | Area Fitur | Tujuan Pengujian | Jenis Pengujian yang Cocok | Contoh Skenario Uji |
-|----|-------------|------------------|-----------------------------|----------------------|
-| 1 | **Login & Register** | Pastikan proses login/register normal & aman | Functional Test, API Test, Security Test | Login dengan kredensial valid & invalid. |
-| 2 | **Pencarian & Pemesanan Lapangan** | Pastikan alur sewa lapangan berfungsi penuh | End-to-End Test, Regression Test | Pilih lokasi → pilih jam → bayar → verifikasi status booking. |
-| 3 | **Sparring & Community** | Cek fitur mencari lawan main/tim lain | Functional Test, Usability Test | Kirim permintaan sparring dan cek notifikasi lawan. |
-| 4 | **Pembayaran (Payment Gateway)** | Validasi integrasi pembayaran | Integration Test, API Test | Bayar dengan berbagai metode & cek status “Success”/“Failed”. |
-| 5 | **Notifikasi (Push Notification)** | Pastikan user menerima notifikasi | Notification Test | Lakukan booking → pastikan notifikasi dikirim. |
-| 6 | **Offline Handling** | Uji perilaku aplikasi saat koneksi hilang | Network Simulation Test | Matikan koneksi saat booking → cek pesan error. |
-| 7 | **UI Consistency** | Pastikan tampilan seragam & mudah digunakan | UI/UX Test, Exploratory Test | Bandingkan gaya desain antar halaman. |
+<table border="1" cellspacing="0" cellpadding="6" style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 14px;">
+  <thead style="background-color: #f2f2f2;">
+    <tr>
+      <th>No</th>
+      <th>Area Fitur</th>
+      <th>Tujuan Pengujian</th>
+      <th>Jenis Pengujian yang Cocok</th>
+      <th>Contoh Skenario Uji</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><b>Login & Register</b></td>
+      <td>Pastikan proses login/register normal & aman.</td>
+      <td>Functional Test, API Test, Security Test</td>
+      <td>Login dengan kredensial valid & invalid.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><b>Pencarian & Pemesanan Lapangan</b></td>
+      <td>Pastikan alur sewa lapangan berfungsi penuh.</td>
+      <td>End-to-End Test, Regression Test</td>
+      <td>Pilih lokasi → pilih jam → bayar → verifikasi status booking.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><b>Sparring & Community</b></td>
+      <td>Cek fitur mencari lawan main/tim lain.</td>
+      <td>Functional Test, Usability Test</td>
+      <td>Kirim permintaan sparring dan cek notifikasi lawan.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><b>Pembayaran (Payment Gateway)</b></td>
+      <td>Validasi integrasi pembayaran.</td>
+      <td>Integration Test, API Test</td>
+      <td>Bayar dengan berbagai metode & cek status “Success”/“Failed”.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><b>Notifikasi (Push Notification)</b></td>
+      <td>Pastikan user menerima notifikasi.</td>
+      <td>Notification Test</td>
+      <td>Lakukan booking → pastikan notifikasi dikirim.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><b>Offline Handling</b></td>
+      <td>Uji perilaku aplikasi saat koneksi hilang.</td>
+      <td>Network Simulation Test</td>
+      <td>Matikan koneksi saat booking → cek pesan error.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><b>UI Consistency</b></td>
+      <td>Pastikan tampilan seragam & mudah digunakan.</td>
+      <td>UI/UX Test, Exploratory Test</td>
+      <td>Bandingkan gaya desain antar halaman.</td>
+    </tr>
+  </tbody>
+</table>
 
----
-
-## ⚙️ Tools yang Direkomendasikan
-
-| Tujuan | Tools |
-|---------|-------|
-| Functional Testing | Cypress (web), Appium (mobile) |
-| API Testing | Postman, Cypress API test |
-| UI/UX Testing | BrowserStack, Detox, Figma Inspect |
-| Performance | Lighthouse, GTmetrix, Firebase Performance |
-| Security | OWASP ZAP, Burp Suite (basic) |
-
----
-
-## ✅ Kesimpulan
-
-Sebagai QA Engineer:
-- Fokus pengujian pada **alur booking, validasi harga, dan integrasi pembayaran**.  
-- Untuk **web**, gunakan *Cypress* + *Postman*.  
-- Untuk **mobile**, gunakan *Appium* atau *Detox*.  
-- Prioritas utama:
-  1. Tidak ada **double booking**  
-  2. Harga sesuai tarif  
-  3. Pembayaran valid & status sinkron  
-  4. Pengalaman pengguna mulus di web & mobile.
