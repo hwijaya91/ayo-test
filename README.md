@@ -161,22 +161,22 @@
     </tr>
     <tr>
       <td>4</td>
-      <td><b>Notifikasi (Push Notification)</b></td>
+      <td><b>Notifikasi</b></td>
       <td>Pastikan user menerima notifikasi</td>
       <td>Functional Test</td>
-      <td>Lakukan booking → pastikan notifikasi dikirim</td>
+      <td>Lakukan booking dan pastikan notifikasi dikirim</td>
     </tr>
     <tr>
       <td>5</td>
-      <td><b>Offline Handling</b></td>
+      <td><b>Offline Test</b></td>
       <td>Uji perilaku aplikasi saat koneksi hilang</td>
-      <td>Network Simulation Test</td>
-      <td>Matikan koneksi saat booking → cek pesan error</td>
+      <td>Network Test</td>
+      <td>Matikan koneksi saat booking dan cek pesan error</td>
     </tr>
     <tr>
       <td>6</td>
       <td><b>Location Test</b></td>
-      <td>Uji perilaku aplikasi saat GPS On</td>
+      <td>Uji perilaku aplikasi saat GPS on</td>
       <td>Functional Test</td>
       <td>Apakah menampilkan lapangan / rekomendasi lapangan dari daerah dekat lokasi user</td>
     </tr>
