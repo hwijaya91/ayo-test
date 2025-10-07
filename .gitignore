@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Cypress artifacts
+cypress/videos/
+cypress/screenshots/
+
+# Environment variables
+.env
+.env.local
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Build outputs
+dist/
+build/
