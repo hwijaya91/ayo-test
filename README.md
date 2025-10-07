@@ -3,9 +3,12 @@
 
 ## Cara Penggunaan
 
-1. git clone
-2. npm install
-3. npx cypress open
+1. <code>git clone https://github.com/hwijaya91/ayo-test.git</code>
+2. <code>npm install</code>
+3. <code>npx cypress open</code>
+4. Pilih E2E Testing dan pilih browser
+5. Pada browser yang baru terbuka pilih <b>spec.cy.js</b>
+
 
 
 ## Test Scenario
@@ -61,9 +64,9 @@
   <thead style="background-color: #f2f2f2;">
     <tr>
       <th>No</th>
-      <th>Area Fitur</th>
+      <th>Bagian yang Diuji</th>
       <th>Tujuan Pengujian</th>
-      <th>Jenis Pengujian yang Cocok</th>
+      <th>Mekanisme Pengujian</th>
       <th>Contoh Skenario Uji</th>
     </tr>
   </thead>
@@ -128,9 +131,9 @@
   <thead style="background-color: #f2f2f2;">
     <tr>
       <th>No</th>
-      <th>Area Fitur</th>
+      <th>Bagian yang Diuji</th>
       <th>Tujuan Pengujian</th>
-      <th>Jenis Pengujian yang Cocok</th>
+      <th>Mekanisme Pengujian</th>
       <th>Contoh Skenario Uji</th>
     </tr>
   </thead>
