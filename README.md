@@ -58,7 +58,7 @@
 
 # Studi Kasus 2 - Desktop dan MobileApp
 
-## 1️⃣ Desktop (Google Chrome)
+## 1️⃣ Desktop
 
 <table border="1" cellspacing="0" cellpadding="6" style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 14px;">
   <thead style="background-color: #f2f2f2;">
@@ -94,24 +94,24 @@
     </tr>
     <tr>
       <td>4</td>
-      <td><b>Responsivitas Website</b></td>
-      <td>Pastikan tampilan UI proporsional di berbagai device.</td>
+      <td><b>Cross Browser Testing / Responsive Testing</b></td>
+      <td>Pastikan tampilan UI konsisten di beberapa browser (Chrome, Mozilla, Edge)</td>
       <td>Responsive UI Testing</td>
-      <td>Uji di resolusi mobile, tablet, dan desktop.</td>
+      <td>Uji di resolusi mobile, tablet, dan pada beberapa browser desktop</td>
     </tr>
     <tr>
       <td>5</td>
       <td><b>Kecepatan dan Performa</b></td>
-      <td>Evaluasi waktu load halaman.</td>
+      <td>Evaluasi waktu load halaman</td>
       <td>Performance Testing</td>
-      <td>Gunakan Lighthouse/GTmetrix untuk mengukur load time.</td>
+      <td>Gunakan JMeter untuk mengukur load time</td>
     </tr>
   </tbody>
 </table>
 
 ---
 
-## 2️⃣ Mobile App (Android)
+## 2️⃣ Mobile App (Android / IOS)
 
 <table border="1" cellspacing="0" cellpadding="6" style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 14px;">
   <thead style="background-color: #f2f2f2;">
@@ -126,52 +126,59 @@
   <tbody>
     <tr>
       <td>1</td>
-      <td><b>Login & Register</b></td>
-      <td>Pastikan proses login/register normal & aman.</td>
-      <td>Functional Test, API Test, Security Test</td>
-      <td>Login dengan kredensial valid & invalid.</td>
+      <td><b>Autentikasi User (Masuk/Daftar)</b></td>
+      <td>Validasi form login & register sesuai standar </td>
+      <td>Functional Testing, Negative Testing, Security Testing</td>
+      <td>Coba login dengan email salah, password kosong, format salah, SQL Injection, dan lain-lain</td>
     </tr>
     <tr>
       <td>2</td>
-      <td><b>Pencarian & Pemesanan Lapangan</b></td>
-      <td>Pastikan alur sewa lapangan berfungsi penuh.</td>
-      <td>End-to-End Test, Regression Test</td>
-      <td>Pilih lokasi → pilih jam → bayar → verifikasi status booking.</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td><b>Sparring & Community</b></td>
-      <td>Cek fitur mencari lawan main/tim lain.</td>
-      <td>Functional Test, Usability Test</td>
-      <td>Kirim permintaan sparring dan cek notifikasi lawan.</td>
+      <td><b>Fitur Search dan Filter Sewa Lapangan, Main Bareng, dan Sparring</b></td>
+      <td>Memastikan fitur pencarian memberikan hasil yang relevan</td>
+      <td>Functional Testing, UI/UX Testing, Usability Testing</td>
+      <td>Pilih nama lapangan, kota, dan cabang olahraga yang diinginkan dan juga filter biaya lalu cari venue dan pastikan hasil sesuai</td>
     </tr>
     <tr>
       <td>4</td>
-      <td><b>Pembayaran (Payment Gateway)</b></td>
-      <td>Validasi integrasi pembayaran.</td>
+      <td><b>Pembayaran</b></td>
+      <td>Validasi integrasi pembayaran</td>
       <td>Integration Test, API Test</td>
-      <td>Bayar dengan berbagai metode & cek status “Success”/“Failed”.</td>
+      <td>Bayar dengan berbagai metode & cek status “Success”/“Failed”</td>
     </tr>
     <tr>
       <td>5</td>
       <td><b>Notifikasi (Push Notification)</b></td>
-      <td>Pastikan user menerima notifikasi.</td>
-      <td>Notification Test</td>
-      <td>Lakukan booking → pastikan notifikasi dikirim.</td>
+      <td>Pastikan user menerima notifikasi</td>
+      <td>Functional Test</td>
+      <td>Lakukan booking → pastikan notifikasi dikirim</td>
     </tr>
     <tr>
       <td>6</td>
       <td><b>Offline Handling</b></td>
-      <td>Uji perilaku aplikasi saat koneksi hilang.</td>
+      <td>Uji perilaku aplikasi saat koneksi hilang</td>
       <td>Network Simulation Test</td>
-      <td>Matikan koneksi saat booking → cek pesan error.</td>
+      <td>Matikan koneksi saat booking → cek pesan error</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><b>Location Test</b></td>
+      <td>Uji perilaku aplikasi saat GPS On</td>
+      <td>Functional Test</td>
+      <td>Apakah menampilkan lapangan / rekomendasi lapangan dari daerah dekat lokasi user</td>
     </tr>
     <tr>
       <td>7</td>
       <td><b>UI Consistency</b></td>
-      <td>Pastikan tampilan seragam & mudah digunakan.</td>
+      <td>Pastikan informasi yang ingin disampaikan sama dengan di desktop</td>
       <td>UI/UX Test, Exploratory Test</td>
-      <td>Bandingkan gaya desain antar halaman.</td>
+      <td>Bandingkan gaya desain antar halaman</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><b>Fitur Chat</b></td>
+      <td>Pastikan fitur chat berfungsi</td>
+      <td>Functional Test</td>
+      <td>Simulasikan chat dengan penyewa lapangan, antar teman sparring, dan antar komunitas</td>
     </tr>
   </tbody>
 </table>
