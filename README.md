@@ -106,6 +106,20 @@
       <td>Performance Testing</td>
       <td>Gunakan JMeter untuk mengukur load time</td>
     </tr>
+    <tr>
+      <td>6</td>
+      <td><b>Pembayaran</b></td>
+      <td>Validasi integrasi pembayaran</td>
+      <td>Integration Test, API Test</td>
+      <td>Bayar dengan berbagai metode & cek status “Success”/“Failed”</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><b>Test booking bersamaan</b></td>
+      <td>Test performa website saat terjadi booking secara bersamaan</td>
+      <td>Load Test</td>
+      <td>10 user berbeda melakukan booking di venue dan jadwal yang sama bersamaan</td>
+    </tr>
   </tbody>
 </table>
 
@@ -139,21 +153,21 @@
       <td>Pilih nama lapangan, kota, dan cabang olahraga yang diinginkan dan juga filter biaya lalu cari venue dan pastikan hasil sesuai</td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>3</td>
       <td><b>Pembayaran</b></td>
       <td>Validasi integrasi pembayaran</td>
       <td>Integration Test, API Test</td>
       <td>Bayar dengan berbagai metode & cek status “Success”/“Failed”</td>
     </tr>
     <tr>
-      <td>5</td>
+      <td>4</td>
       <td><b>Notifikasi (Push Notification)</b></td>
       <td>Pastikan user menerima notifikasi</td>
       <td>Functional Test</td>
       <td>Lakukan booking → pastikan notifikasi dikirim</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>5</td>
       <td><b>Offline Handling</b></td>
       <td>Uji perilaku aplikasi saat koneksi hilang</td>
       <td>Network Simulation Test</td>
