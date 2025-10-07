@@ -6,12 +6,15 @@
 1. <code>git clone https://github.com/hwijaya91/ayo-test.git</code>
 2. <code>cd ayo-test</code>
 3. <code>npm install</code>
-4. <code>npx cypress run</code>
+4. <code>npx cypress open</code>
+5. Pilih E2E testing
+6. Pilih browser apapun
+7. Pilih <code>spec.cy.js</code>
 
 ## Notes 
 
-- Data tabel pada soal dibuat dalam file json di cypress/fixtures
-- Script automation ada di file cypress/e2e/spec.cy.js
+- Data tabel pada soal dibuat dalam file json di folder <code>cypress/fixtures</code>
+- Script automation ada di file <code>cypress/e2e/spec.cy.js</code>
 
 
 ## Test Scenario
