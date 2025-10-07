@@ -1,5 +1,14 @@
 
-# 🧠 Studi Kasus 1 – QA Analysis AYO.co.id
+# Studi Kasus 1 – Cara penggunaan dan Test Scenario
+
+## Cara Penggunaan
+
+1. git clone
+2. npm install
+3. npx cypress open
+
+
+## Test Scenario
 
 <table border="1" cellspacing="0" cellpadding="6" style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 14px;">
   <thead>
